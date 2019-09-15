@@ -61,7 +61,7 @@
                 <h3>Tabela Aluguel</h3>
                 <form method="POST" action="formCriar.php">
                     <button>Criar Novo +</button>
-                    <input name="criar" type="hidden" value="aluguel">
+                    <input name="criar" type="hidden" value="<?="aluguel"?>">
                 </form>
             </caption>
             <thead>

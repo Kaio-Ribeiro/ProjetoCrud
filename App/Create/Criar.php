@@ -22,7 +22,9 @@
             }
             $campos = implode(", ", $campos);
             $values = implode(", ", $values);
-            $sql = "INSERT INTO {$this->tabela} ({$campos}) VALUES({$values});";
+            $sql  = "SET FOREIGN_KEY_CHECKS = 0;";
+            $sql .= "INSERT INTO {$this->tabela} ({$campos}) VALUES({$values});";
+            $sql .= "SET FOREIGN_KEY_CHECKS = 0;";
             $consulta = $pdo->prepare($sql);
             $resultado = $consulta->execute();
 

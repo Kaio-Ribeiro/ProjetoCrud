@@ -58,7 +58,7 @@
     <body>
         <table>
             <caption>
-                <h3>Tabela Ator</h3>
+                <h3>Tabela Cidade</h3>
                 <form method="POST" action="formCriar.php">
                 <button>Criar Novo +</button>
                 <input name="criar" type="hidden" value="cidade">

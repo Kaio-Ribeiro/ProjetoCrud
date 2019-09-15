@@ -1,10 +1,15 @@
 <?php
     require_once __DIR__ . "/App/autoload.php";
 
+    if(isset($_POST["criar"]) && !empty($_POST["criar"])){
+        $pag_ini = $_POST["criar"].'.php';
+    }
+
     use App\Read\Visualizar;
 
     $lista = new Visualizar($_POST["criar"]);
     $tabela = $lista->buscar(1);
+
 ?>
 <html>
     <head>
